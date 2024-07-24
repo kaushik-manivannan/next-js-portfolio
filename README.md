@@ -32,12 +32,6 @@ Check out the live demo [here](your-live-demo-link).
     npm run dev
     ```
 
-## Usage
-
-- Customize the content in the `content` directory to update your personal information and projects.
-- Modify the components in the `components` directory to tweak the layout and design.
-- Adjust the styles in the `styles` directory to personalize the look and feel.
-
 ## Contributing
 
 Feel free to fork the repository and make contributions. Pull requests are welcome!
@@ -45,7 +39,3 @@ Feel free to fork the repository and make contributions. Pull requests are welco
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Let me know if you need any further adjustments!

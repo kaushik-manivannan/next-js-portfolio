@@ -1,7 +1,3 @@
-Sure! Here's the revised description:
-
----
-
 # Personal Portfolio Website
 
 This is my personal portfolio website built using Next.js, Framer Motion, Aceternity UI, and Tailwind CSS. The site showcases my projects, skills, and experience with a **futuristic design**, **dynamic animations**, and **seamless transitions**, offering a visually stunning and highly interactive user experience.

@@ -10,8 +10,6 @@ import animationData from "@/data/confetti.json"
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { FlipWords } from "./FlipWords";
-import { Boxes } from "./BackgroundBoxes";
-import { BackgroundBeams } from "./BackgroundBeams";
 import { WavyBackground } from "./WavyBackground";
 
 export const BentoGrid = ({

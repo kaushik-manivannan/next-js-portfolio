@@ -8,7 +8,7 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
+      title: "I navigate project complexities with collaborative spirit and clear communication",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -28,8 +28,8 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
+      // title: "My Tech Stack",
+      description: "My Digital DNA includes",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
@@ -38,7 +38,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
+      title: "Building tomorrow's digital landscape, today.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -226,4 +226,12 @@ export const navItems = [
     "Java",
     "Spring Boot",
     "AWS"
+  ]
+
+  export const flipWords = [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Java",
+    "Python"
   ]

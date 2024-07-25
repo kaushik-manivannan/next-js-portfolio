@@ -2,13 +2,17 @@
 
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { leftLists, rightLists } from "@/data";
+import { flipWords, leftLists, rightLists } from "@/data";
 import { GlobeDemo } from "./GridGlobe";
 import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from "@/data/confetti.json"
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { FlipWords } from "./FlipWords";
+import { Boxes } from "./BackgroundBoxes";
+import { BackgroundBeams } from "./BackgroundBeams";
+import { WavyBackground } from "./WavyBackground";
 
 export const BentoGrid = ({
   className,
@@ -94,18 +98,37 @@ export const BentoGridItem = ({
         )}
 
         <div className={cn(
-            titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10'
+            titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-7'
         )}>
-            <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+            <div className="font-sans font-light text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
                 {description}
             </div>
             <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
                 {title}
             </div>
 
-            {id === 2 && <GlobeDemo />}
+            {id === 3 && (
+                <span className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10"><FlipWords words={flipWords} duration={1200}/></span>
+            )}
 
             {id === 3 && (
+              <div>
+                <WavyBackground 
+                  backgroundFill="rgb(4,7,29)"
+                  blur={6}
+                  waveWidth={40}
+                  colors={[
+                    "#C29DFA",
+                    "#B051FB",
+                    "#8BF8FC"
+                  ]}
+                />
+              </div>
+            )}
+
+            {id === 2 && <GlobeDemo />}
+
+            {/* {id === 3 && (
                 <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
                     <div className="flex flex-col gap-3 lg:gap-8">
                         {leftLists.map((item) => (
@@ -124,7 +147,7 @@ export const BentoGridItem = ({
                         ))}
                     </div>
                 </div>
-            )}
+            )} */}
 
             {id === 6 && (
               <div className="mt-5 relative">

@@ -4,6 +4,8 @@ import { TypewriterEffectSmooth } from './ui/TypewriterEffect';
 import MagicButton from './ui/MagicButton';
 import { BsPersonWorkspace } from 'react-icons/bs';
 import ShootingStars from './ui/ShootingStars';
+import { socialMedia } from '@/data';
+import { LinkPreview } from './ui/LinkPreview';
 
 const Hero = () => {
 
@@ -37,7 +39,7 @@ const Hero = () => {
             </div>
             <ShootingStars />
             </div>
-            <div className="flex justify-center relative my-20 z-10">
+            <div className="flex justify-center relative mt-20 mb-10">
                 <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
                     <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Made with Next.js
@@ -52,7 +54,7 @@ const Hero = () => {
                         A Full-Stack AI Software Engineer based in Boston, MA.
                     </p>
 
-                    <a href="#about">
+                    <a href="#projects">
                         <MagicButton
                             title="View my Projects"
                             icon={<BsPersonWorkspace />}
@@ -60,6 +62,14 @@ const Hero = () => {
                         />
                     </a>
                 </div>
+            </div>
+            <div className="flex justify-center items-center md:gap-3 gap-6 z-50">
+            {socialMedia.map((profile) => (
+                <LinkPreview url={profile.link} key={profile.id} className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 z-50">
+                    <img src={profile.img} alt="Kaushik Manivannan" width={20} height={20}
+                    />
+                </LinkPreview>
+            ))}
             </div>
         </div>
     )

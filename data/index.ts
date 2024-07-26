@@ -1,7 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
     { name: "Experience", link: "#experience" },
+    { name: "Projects", link: "#projects" },
     { name: "Contact", link: "#contact" },
   ];
   
@@ -212,6 +212,11 @@ export const navItems = [
       img: "/link.svg",
       link: "https://www.linkedin.com/in/kaushik-manivannan/"
     },
+    {
+      id: 3,
+      img: "/leetcode.svg",
+      link: "https://leetcode.com/u/kaushik_manivannan/"
+    },
   ];
 
   export const leftLists = [
@@ -229,6 +234,7 @@ export const navItems = [
   export const flipWords = [
     "Next.js",
     "React",
+    "JavaScript",
     "TypeScript",
     "Java",
     "Python"

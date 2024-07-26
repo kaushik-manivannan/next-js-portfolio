@@ -5,23 +5,23 @@ import { FaLocationArrow } from 'react-icons/fa';
 
 const RecentProjects = () => {
   return (
-    <div className="py-20" id="projects">
+    <div className="pt-7 pb-20" id="projects">
         <h1 className="heading">
-            A small selection of {" "}
-            <span className="text-purple">recent projects</span>
+            Showcase of {" "}
+            <span className="text-purple">Recent Projects</span>
         </h1>
-        <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+        <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8">
             {
                 projects.map(({id, title, des, img, iconLists, link}) => (
                     <div key={id} className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]">
                         <PinContainer title={link} href={link}>
-                            <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10 rounded-lg">
+                            <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] mb-10 rounded-lg h-fit">
                                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                                     <img src="/bg.png" alt="Kaushik Manivannan" />
                                 </div>
-                                <img src={img} alt="Kaushik Manivannan" className="z-10 absolute bottom-0 rounded-lg"/>
+                                <img src={img} alt="Kaushik Manivannan" className={`z-10 absolute top-0 bottom-0 rounded-lg`}/>
                             </div>
-                            <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                            <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 mb-1">
                                 {title}
                             </h1>
                             <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">

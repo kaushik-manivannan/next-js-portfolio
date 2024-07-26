@@ -1,6 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
+    { name: "Experience", link: "#experience" },
     { name: "Contact", link: "#contact" },
   ];
   
@@ -17,7 +18,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "I'm very flexible with time zone communications",
+      title: "Currently in Boston, MA",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -48,7 +49,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
+      title: "Currently building a project to ship to 1000 users",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -71,35 +72,35 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      title: "Tasty Trails",
+      des: "A MERN Stack application that enhances community collaboration and minimizes food waste.",
+      img: "/tasty-trails.png",
+      iconLists: ["/html.svg", "/css.svg", "/sass.svg", "/js.svg", "/ts.svg", "/re.svg", "/exp.svg", "/mongo.svg"],
+      link: "https://github.com/kaushik-manivannan/tasty-trails",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      title: "Hire & Seek",
+      des: "A Spring Boot application that simplifies the job application process for both candidates and employers.",
+      img: "/hire-and-seek.png",
+      iconLists: ["/java.svg", "/thymeleaf.svg", "/spring-boot.svg", "hibernate.svg", "mysql.svg"],
+      link: "https://github.com/kaushik-manivannan/hire-and-seek",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      title: "Smart Parking Management System",
+      des: "Comprehensive Oracle SQL based database-driven solution that addresses urban parking challenges.",
+      img: "/parking.jpg",
+      iconLists: ["/oracle.svg", "/sql-dev.svg"],
+      link: "https://github.com/kaushik-manivannan/Smart-Parking-Management-System",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      title: "Pathfinding Visualizer",
+      des: "An interactive tool that showcases various pathfinding algorithms in action.",
+      img: "/pathfinding.png",
+      iconLists: ["/html.svg", "/css.svg", "/js.svg"],
+      link: "https://github.com/kaushik-manivannan/pathfinding-visualizer",
     },
   ];
   
@@ -232,3 +233,32 @@ export const navItems = [
     "Java",
     "Python"
   ]
+
+  export const experiences = [
+    {
+      title: "Master of Science in Software Engineering Systems",
+      company_name: "Northeastern University",
+      icon: "northeastern.png",
+      iconBg: "#fff",
+      date: "Sep 2023 - May 2025",
+      points: [
+        "CGPA: 3.84",
+        "Relevant Coursework: Object Oriented Design, Web Design and User Experience Engineering, Data Management and Database Design, Enterprise Software Design, Program Structures and Algorithms"
+      ],
+    },
+    {
+      title: "Full Stack Developer",
+      company_name: "Tata Consultancy Services",
+      icon: "tcs.png",
+      iconBg: "#fff",
+      date: "Aug 2021 - Feb 2023",
+      points: [
+        "Spearheaded the front-end development of a Single Page Application (SPA) using Angular, revolutionizing the customer verification process for an insurance firm by replacing their traditional call center process with a streamlined digital system",
+        "Streamlined user verification process, slashing average confirmation times from 10+ minutes to just 3 minutes (70% faster) through digital self-service workflows, handling 2,000+ verification requests per day",
+        "Integrated Tensorflow-powered AI facial detection and MediaRecorder Web API for seamless real-time video capture, achieving a 98% accuracy rate in user verification",
+        "Engineered responsive user interfaces supporting seamless usage across 6 device categories while achieving 97% accessibility compliance with WCAG 2.1 standards, enabling support for disability needs",
+        "Refactored critical sections of Java code to leverage multithreading, resulting in a 40% improvement in CPU utilization efficiency and a 50% reduction in processing times for concurrent user requests",
+        "Orchestrated the development of 5 junior developers by promoting Agile development methodologies, pair programming and personalized code review sessions within the team, speeding up project delivery by 30% and minimizing bug reports by 40%"
+      ],
+    }
+  ];
